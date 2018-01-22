@@ -54,6 +54,7 @@ import static com.txusballesteros.widgets.app.R.id.line1;
 
 public class MainActivity extends AppCompatActivity {
 
+ /// testing for git
 
     private LineChart canvas;
 
