@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#a6e6ec"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lines"
+            android:layout_width="540sp"
+            android:layout_height="300sp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Attendance Breakdown"
+            android:textColor="#fff"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="370dp"
+       android:gravity="bottom|center"
+       android:background="@mipmap/children">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="35dp">
+
+
+                 <TextView
+                     android:id="@+id/title1"
+                     android:layout_width="140dp"
+                     android:layout_height="140dp"
+                     android:layout_marginBottom="27dp"
+                     android:gravity="center"
+                     android:layout_gravity="center"
+                     android:text="70%"
+                     android:background="@drawable/filename"
+                     android:textColor="#fff"
+                     android:textSize="50sp"
+                     android:textStyle="" />
+
+              <com.txusballesteros.widgets.FitChart
+                android:id="@+id/Chart1"
+                style="@style/chart_style"
+                app:backStrokeColor="#000"
+                app:valueStrokeColor="@color/chart_value_1"
+                android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/maintitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:fontFamily="Verdana"
+                    android:gravity="bottom"
+                    android:maxWidth="150dp"
+                    android:text="Pre-Primary"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:textStyle="" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="35dp">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="27dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="45%"
+                android:background="@drawable/filename"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:textStyle="" />
+
+                <com.txusballesteros.widgets.FitChart
+                    android:id="@+id/Chart2"
+                    style="@style/chart_style"
+                    app:backStrokeColor="#000"
+                    app:valueStrokeColor="@color/chart_value_1"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/maintitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:fontFamily="Verdana"
+                    android:gravity="bottom"
+                    android:maxWidth="150dp"
+                    android:text="Primary"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:textStyle="" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_marginBottom="35dp">
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="27dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="15%"
+                android:background="@drawable/filename"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:textStyle="" />
+
+                <com.txusballesteros.widgets.FitChart
+                    android:id="@+id/Chart3"
+                    style="@style/chart_style"
+                    app:backStrokeColor="#000"
+                    app:valueStrokeColor="@color/chart_value_1"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/maintitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:fontFamily="Verdana"
+                    android:gravity="bottom"
+                    android:maxWidth="150dp"
+                    android:text="Secundary"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:textStyle="" />
+        </FrameLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>
